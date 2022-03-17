@@ -1,14 +1,14 @@
 body{
 
     border:2px solid rgb(216, 9, 9)  ;
-
     color: red;
-
-    font-size: xx-large;
+    font-size: large;
+    /* margin-block: inherit; */
 }
 .thbs-box
 {
     border: 8px dashed #adff2f;
+    text-align: center;
 }
 #ptag{
     background-color: aquamarine;

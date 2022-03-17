@@ -1,0 +1,15 @@
+#header-img
+{
+    background-color: rgb(228, 228, 228);
+}
+#footer{
+ border: 2px grey;
+ background-color: rgb(228, 228, 228);
+ text-align: center;
+}
+body{
+    background-color: rgb(98, 243, 236);
+}
+#video{
+    align-items: center;
+}
