@@ -5,7 +5,17 @@ body{
     color: red;
 
     font-size: xx-large;
+}
+.thbs-box
+{
+    border: 8px dashed #adff2f;
+}
+#ptag{
+    background-color: aquamarine;
+    border: 3px dashed black;
 
-
-
+}
+.ptag{
+    background-color: blanchedalmond;
+    border: 3px dashed black;
 }
