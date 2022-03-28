@@ -1,0 +1,47 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/config/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../bootstrap/config/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="alert alert-primary" role="alert">
+        <div class="alert alert-primary alert-dismissible" role="alert">
+            A simple primary alert—check it out!
+            <button id="clalert" type="button" class="btn-close" data-bs-dismiss="alert"
+                aria-label="Close"></button>
+        </div>
+        <div id="alert-holder">
+            <!-- generated here -->
+        </div>
+
+        <button id="btn" class="btn btn-primary">
+            Click Here
+        </button>
+        <script>
+            let closeBtn = document.getElementById("clalert");
+            closeBtn.addEventListener('click', function () {
+                let node = document.querySelector('.alert');
+                let all = bootstrap.Alert.getInstance(node);
+                all.close();
+            });
+
+
+            let btnalert = document.getElementById("btn");
+            let alhold = document.getElementById("alert-holder");
+            btnalert.addEventListener('click', function () {
+                let divcreate = document.createElement('div');
+                let altelement = "<div  class='alert alert-primary alert-dismissible' role='alert'>A simple primary alert—check it out!  <button id='close-alert' type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button></div> ";
+                divcreate.innerHTML = altelement;
+                alhold.append(divcreate);
+            });
+        </script>
+</body>
+
+</html>
