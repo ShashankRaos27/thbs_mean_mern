@@ -9,3 +9,6 @@ var address='shimoga';
 
 console.log(age+address);
 console(typeof age);
+
+let pinky=true;
+console.log(pinky);
