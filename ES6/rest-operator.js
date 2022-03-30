@@ -6,10 +6,10 @@ console.log(fulllist);
 
 function thbs(a,b,c, ...config)
 {
-    
+
 }
 
-// ================== conver string to array
+// ===================== conver string to array
 var str='shashank';
 var res=[...str];
 console.log(res);
